@@ -3,7 +3,7 @@ body{
 	width: 100%;
 	margin:0px;
 	padding:0px;
-       
+
 	background-color: #FFF;
 	background: url(../images/bg_light.jpg);
 
@@ -43,16 +43,16 @@ h2{
 	font-size: 1.2em;
 	line-height: 1.25em;
 	letter-spacing: -0.025em;
-	font-weight:200;
+	font-weight:300;
 }
 
 h3{
 	text-align: left;
 	font-size: 1.0em;
-	line-height: 1.25em;
+	line-height: 1.5em;
 	letter-spacing: -0.025em;
 	font-weight:200;
-	margin-bottom: -25px;
+	margin-bottom: -35px;
 }
 
 b{
@@ -106,7 +106,7 @@ a, a:visited, .middle-purple, em{
 }
 
 .badge-container{
-	
+
 	height: 85px;
 	/*width: 265px;*/
 	width: 130px;
@@ -117,7 +117,7 @@ a, a:visited, .middle-purple, em{
 
 .nav-container{
 	z-index: 1000;
-	
+
 	height: 55px;
 	position: fixed;
 	margin: 0;
@@ -125,12 +125,12 @@ a, a:visited, .middle-purple, em{
 }
 
 .nav-background{
-	
+
 	position: fixed;
-	
+
 	height: 55px;
 	width: 100%;
-	
+
 	background-color: #FDFDFD;
 	filter:alpha(opacity=85);
 	opacity: 0.85;
@@ -140,7 +140,7 @@ a, a:visited, .middle-purple, em{
 }
 
 .nav-menu{
-	
+
 	position: fixed;
 	width: 100%;
 }
@@ -188,7 +188,7 @@ nav li > a:hover, nav li > a.active{
 	height: 2px;
 	margin-left: auto;
 	margin-right: auto;
-	
+
 	background-color: rgb(90, 50, 90);
 }
 
@@ -251,6 +251,7 @@ nav li > a:hover, nav li > a.active{
 
 .paper-links{
 	margin-top: -10px;
+	margin-bottom: 20px;
 	width: 100%;
 }
 
@@ -289,19 +290,19 @@ nav li > a:hover, nav li > a.active{
 }
 
 @media only screen and (min-width: 640px){
-	
+
 	.paper-img{
 		padding-top:0px;
 		min-width: 250px;
 		width: 35%;
-		margin-top: 25px;
+		margin-top: 2px;
 	}
-  
+
   .left{
 		margin-right: 20px;
 		float: left;
   }
-  
+
   .right{
 		margin-left: 20px;
 		float: right;
@@ -309,39 +310,39 @@ nav li > a:hover, nav li > a.active{
 }
 
 @media only screen and (max-width : 640px){
-  
-	.paper-img, .techno-images{ 
-    
+
+	.paper-img, .techno-images{
+
 		margin: 15px 0px -15px 0px;
 		max-width: 100%;
 	}
-	
+
 	.main-wrapper, .footer-wrapper{
 		width: 90%;
 	}
-	
+
 	nav{
 		width: 90%;
 	}
-	
+
 	nav li, nav li > a, nav li > a:visited, nav li > a.active nav li > a:hover{
 
 		font-size: 1.1em;
 	}
-  
+
   #cytosplore-logo{
     margin-bottom: -30px;
   }
 }
 
 @media only screen and (max-width : 480px){
-	
+
 	body{
 		font-size: 0.95em;
 		letter-spacing: -0.025em;
 		line-height: 1.4em;
 	}
-	
+
 	nav li{
 		margin-right: 5px;
 		margin-left: 5px;
@@ -351,7 +352,7 @@ nav li > a:hover, nav li > a.active{
 
 		font-size: 1.1em;
 	}
-  
+
   #cytosplore-logo{
     margin-bottom: -30px;
   }
@@ -462,7 +463,7 @@ a.symbol {
 }
 
 .portrait {
-  
+
     background: #FFF;
     width: 80px;
     height: 80px;
@@ -522,7 +523,7 @@ a.symbol {
 
 #portrait-fk{
   background: url(../images/team/fk.jpg) no-repeat;
-  background-size: 90px 90px
+  background-size: 80px 80px
 }
 
 #portrait-bl{
@@ -552,7 +553,7 @@ a.symbol {
   height: 100px;
   z-index: 999;
 }
-  
+
 .portrait .popover:before {
   border-bottom: 10px solid white;
   border-right: 10px solid transparent;
@@ -689,4 +690,11 @@ input[type=checkbox] {
     color: white;
     padding-bottom: -10px;
     border: none;
+}
+
+.title, b{
+	font-weight: 300;
+}
+
+.authors{
 }
