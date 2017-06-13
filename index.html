@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+	
+	  <title>Cytosplore</title>
+	  <meta charset="UTF-8">
+	  <meta name = "viewport" content = "width = device-width">
+	  
+	  <link rel="stylesheet" href="assets/css/lity.min.css" type="text/css" />
+	  <link rel="stylesheet" href="assets/css/style.css" media="all" type="text/css"/>
+
+    <script type='text/javascript' src='assets/js/jquery.js'></script>
+	  <script type='text/javascript' src="assets/js/lity.min.js"></script>
+    <script type='text/javascript' src='assets/js/scripts.js'></script>
+	  
+	  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,200,100' rel='stylesheet' type='text/css'>
+    
+    <!-- Google Analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-100631763-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+    <!-- End Google Analytics -->
+	
+	</head>
+
+	<body>
+	
+		<div class="nav-container">
+			<div class="nav-background"></div>
+			<div class="nav-menu">
+			    <nav>
+			      <ul class="nav">
+			        <li><a href="#teaser"><img id="header_logo" src="assets/images/header_logo.png" alt="Cytosplore Logo">Cytosplore</a><div id="nav-cytosplore"></div></li>
+			        <li><a href="#team">Team</a><div id="nav-team"></div></li-->
+			        <li><a href="#publications">Publications</a><div id="nav-publications"></div></li>
+			        <li><a href="#get">Download</a><div id="nav-download"></div></li>
+			        <li><a href="documentation">Documentation</a><div id="nav-download"></div></li>
+			      </ul>
+			    </nav>
+			</div>
+		</div>
+
+		<div class="main-wrapper">
+			
+			<div class="teaser-container" id="teaser">
+				<div class="image-container" id="header-image">
+					<img src="assets/images/cytosplore.png" alt="Cytosplore Logo" id="cytosplore-logo">
+				</div>
+			</div>
+			
+			<hr>
+		
+			<div class="cytosplore" id="cytosplore">
+				<div class="content-wrapper">
+					<h1>Cytosplore</h1>
+					<div class="section">
+						<p>
+							Cytosplore is an interactive visual analysis system for understanding how the immune system works.
+							The goal of the analysis framework is to provide a clear picture of the immune systems cellular composition and the cells’ corresponding properties and functionality.
+							Cytosplore is targeted at the analysis of mass cytometry (CyToF) data.
+							Mass cytometry is a novel technique to determine the properties of single-cells with unprecedented detail.
+							This amount of detail allows for much finer differentiation but also comes at the cost of more complex analysis.
+							Cytosplore incorporates state-of-the art clustering and dimensionality reduction techniques,
+							such as Approximated-tSNE (up to 100x faster than standard t-SNE without loss in precision) and a custom implementation of the
+							SPADE clustering algorithm. Cytosplore implements progressive visual analytics and visualization techniques to provide a highly engaging
+							user experience through direct feedback and linked views. <a href="#get">Try Cytosplore</a> yourself and <a href="#get">sign up</a> for our mailing list for latest news.
+						</p>
+						<p>
+								<a href="#get"><img src="assets/images/to-download.png" alt="Download" id="download-top"></a>
+						</p>
+					</div>
+					<div class="section">
+						<iframe id="actionvideo" src="https://player.vimeo.com/video/161594269?byline=0&amp;portrait=0" width="80%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+					</div>
+				</div>
+			</div>
+			
+			<hr>
+		
+			<div class="cytosplore" id="team">
+				<div class="content-wrapper">
+					<h1>Team</h1>
+					<div class="section">
+					</br>
+						<div id="portrait-container">
+							<a href="http://www.thomashollt.com" target="_blank">
+								<div class="portrait" id="portrait-th">
+									<span class="popover above">
+									<span class="portrait-name">
+										Thomas Höllt
+									</span><hr>
+									<span class="portrait-text">
+										TU Delft / LUMC </br> Lead Developer/Project Liaison
+									</span>
+									</span>
+								</div>
+							</a>
+							<a href="http://nicola17.github.io" target="_blank">
+							<div class="portrait" id="portrait-np">
+									<span class="popover above">
+									<span class="portrait-name">
+										Nicola Pezzotti
+									</span><hr>
+									<span class="portrait-text">
+										TU Delft </br> Algorithms Research
+									</span>
+									</span>
+								</div>
+							</a>
+							<a href="https://www.linkedin.com/in/vincent-van-unen-bb719747" target="_blank">
+							<div class="portrait" id="portrait-vvu">
+									<span class="popover above">
+									<span class="portrait-name">
+										Vincent van Unen
+									</span><hr>
+									<span class="portrait-text">
+										LUMC </br> Immunology Research
+									</span>
+									</span>
+								</div>
+							</a>
+							<a href="https://www.lumc.nl/org/radiologie/medewerkers/1201120319322222" target="_blank">
+							<div class="portrait" id="portrait-je">
+									<span class="popover above">
+									<span class="portrait-name">
+										Jeroen Eggermont
+									</span><hr>
+									<span class="portrait-text">
+										LUMC </br> Development
+									</span>
+									</span>
+								</div>
+							</a>
+							<a href="https://graphics.tudelft.nl/julian-thijssen/" target="_blank">
+							<div class="portrait" id="portrait-jt">
+									<span class="popover above">
+									<span class="portrait-name">
+										Julian Thijssen
+									</span><hr>
+									<span class="portrait-text">
+										TU Delft </br> Development
+									</span>
+									</span>
+								</div>
+							</a>
+							<a href="https://www.lumc.nl/over-het-lumc/hoo/koning" target="_blank">
+							<div class="portrait" id="portrait-fk">
+									<span class="popover above">
+									<span class="portrait-name">
+										Frits Koning
+									</span><hr>
+									<span class="portrait-text">
+										LUMC </br> PI Immunology
+									</span>
+									</span>
+								</div>
+							</a>
+							<a href="http://graphics.tudelft.nl/~eisemann" target="_blank">
+							<div class="portrait" id="portrait-ee">
+									<span class="popover above">
+									<span class="portrait-name">
+										Elmar Eisemann
+									</span><hr>
+									<span class="portrait-text">
+										TU Delft </br> PI CGV
+									</span>
+									</span>
+								</div>
+							</a>
+							<a href="https://www.lumc.nl/org/radiologie/medewerkers/1008040000252222" target="_blank">
+							<div class="portrait" id="portrait-bl">
+									<span class="popover above">
+									<span class="portrait-name">
+										Boudewijn P.F. Lelieveldt
+									</span><hr>
+									<span class="portrait-text">
+										LUMC </br> PI LKEB
+									</span>
+									</span>
+								</div>
+							</a>
+							<a href="https://graphics.tudelft.nl/anna-vilanova" target="_blank">
+							<div class="portrait" id="portrait-av">
+									<span class="popover above">
+									<span class="portrait-name">
+										Anna Vilanova
+									</span><hr>
+									<span class="portrait-text">
+										TU Delft </br> PI VAnPIRe
+									</span>
+									</span>
+								</div>
+							</a>
+    					<span class="stretch"></span>
+						</div>
+						<p>
+							Join the team! We have open projects within the Cytosplore project including a project on classification of cellular expression data through dimensionality reduction.
+							If you are interested in working with us on this or other projects involving biological visualization for your master thesis project at the TU Delft or LUMC,
+							please contact <a href="mailto:T.Hollt-1@tudelft.nl">Thomas Höllt</a>, or <a href="mailt:A.Vilanova@tudelft.nl">Anna Vilanova</a> to discuss the possibilities.
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<hr>
+		
+			<div class="publications" id="publications">
+				<div class="content-wrapper">
+					<h1>Publications &amp; Media</h1>
+					<div class="section">
+					<h2>Media</h2>
+					The Cytosplore team was interviewed for an article in Medical Delta in December 2016: <a href="http://www.medicaldelta.nl/projects/cytosplore" target=_blank>Exploring new dimensions of the immune system.</a>
+					<h2>Journal Papers</h2>
+					<div class="paper">
+						<div class="paper-image">
+							<a href="https://vimeo.com/161594269" class="lightbox" target="_blank"><img src="images/cytosplore.jpg" alt="Cytosplore" class="paper-img right"></a>
+						</div>
+						<h2>Cytosplore: Interactive Immune Cell Phenotyping for Large Single-Cell Datasets.</h2>
+						<h3>T. Höllt, N. Pezzotti, V. van Unen, F. Koning, E. Eisemann, B. Lelieveldt, and A. Vilanova.<br>
+							Computer Graphics Forum 2016.</h3>
+						<div class="section" class="abstract">
+							<p><b>Abstract:</b>
+              In this work, we present Cytosplore, implementing an interactive workflow to analyze mass cytometry data in an integrated system,
+							providing multiple linked views, showing different levels of detail and enabling the rapid definition of known and unknown cell types, based on mass cytometry (CyTOF).
+							Cytosplore handles millions of cells, each represented as a high-dimensional data point, 
+							facilitates hypothesis generation and confirmation, and provides a significant speed up of the current workflow.</p>
+						</div>
+						<div class="paper-links">
+							<div class="paper-link">
+								<a href="http://www.thomashollt.com/assets/papers/hollt_eurovis_2016/eurovis16_Cytosplore_Interactive_Immune_Cell_Phenotyping_for_Large_Single-Cell_Datasets.pdf" target="_blank">
+									<img src="assets/images/pdf.png" alt="" class="paper-link-img">
+								</a>
+							</div>
+							<div class="paper-link">
+								<a href="http://www.thomashollt.com/assets/papers/hollt_eurovis_2016/eurovis16_Cytosplore_Interactive_Immune_Cell_Phenotyping_for_Large_Single-Cell_Datasets_slides.pdf" target="_blank">
+									<img src="assets/images/slides.png" alt="" class="paper-link-img">
+								</a>
+							</div>
+							<div class="paper-link">
+								<a href="http://dx.doi.org/10.1111/cgf.12893" target="_blank">
+									<img src="assets/images/ieee.png" alt="" class="paper-link-img">
+								</a>
+							</div>
+						</div>
+						<br style="clear:left;">
+					</div>
+					<div class="paper">
+						<div class="paper-image">
+							<img src="images/tvcg_np_2017.jpg" alt="A-tSNE" class="paper-img left">
+						</div>
+						<h2>Approximated and User Steerable tSNE for Progressive Visual Analytics.</h2>
+						<h3>N. Pezzotti, B.P.F. Lelieveldt, L. van der Maaten, T. Höllt, E. Eisemann, and A. Vilanova.<br>
+							Transactions on Computer Graphics and Visualization 2017.</h3>
+						<div class="section" class="abstract">
+							<p><b>Abstract:</b>
+              We introduce a controllable tSNE approximation (A-tSNE), which trades off speed and accuracy, to enable interactive data exploration.
+							We offer real-time visualization techniques, including a density-based solution and a Magic Lens to inspect the degree of approximation.
+							With this feedback, the user can decide on local refinements and steer the approximation level during the analysis.
+							We demonstrate our technique with several datasets.</p>
+						</div>
+						<div class="paper-links">
+							<div class="paper-link">
+								<a href="http://www.thomashollt.com/assets/papers/pezzotti_tvcg_2017/tvcg16_approximated_and_user_steerable_tSNE_for_progressive_visual_analytics.pdf" target="_blank">
+									<img src="assets/images/pdf.png" alt="" class="paper-link-img">
+								</a>
+							</div>
+							<div class="paper-link">
+								<a href="http://dx.doi.org/10.1109/TVCG.2016.2570755" target="_blank">
+									<img src="assets/images/ieee.png" alt="" class="paper-link-img">
+								</a>
+							</div>
+						</div>
+						<br style="clear:right;">
+					</div>
+					<div class="paper">
+						<div class="paper-image">
+							<img src="images/immunity_vvu_2016.jpg" alt="Immunity" class="paper-img right">
+						</div>
+						<h2>Mass Cytometry of the Human Mucosal Immune System Identifies Tissue- and Disease-Associated Immune Subsets.</h2>
+						<h3>V. van Unen, N. Li, I. Molendijk, M. Temurhan, T. Höllt, A. E. van der Meulen-de Jong, H. W. Verspaget, M. L. Mearin, C. J. Mulder, J. van Bergen, B. P. F. Lelieveldt, F. Koning.<br>
+							Immunity 2016.</h3>
+						<div class="section" class="abstract">
+							<p><b>Abstract:</b>
+              Inflammatory intestinal diseases are characterized by abnormal immune responses and affect distinct locations of the gastrointestinal tract.
+							Although the role of several immune subsets in driving intestinal pathology has been studied, a system-wide approach that simultaneously
+							interrogates all major lineages on a single-cell basis is lacking.
+							We used high-dimensional mass cytometry to generate a system-wide view of the human mucosal immune system in health and disease ...</p>
+						</div>
+						<div class="paper-links">
+							<div class="paper-link">
+								<a href="http://dx.doi.org/10.1016/j.immuni.2016.04.014" target="_blank">
+									<img src="assets/images/ieee.png" alt="" class="paper-link-img">
+								</a>
+							</div>
+						</div>
+						<br style="clear:left;">
+					</div>
+				</div>
+				</div>
+			</div>
+			
+			<hr>
+		
+			<div class="get" id="get">
+				<div class="content-wrapper">
+					<h1>Get Cytosplore</h1>
+					<div class="section">
+						<p>
+							At this moment, we provide limited early access to Cytosplore.
+							To get a license for the early access program please fill out the form. Please use your institutional email address so we can get an idea where Cytosplore is being used for research. This will also sign you up to our email newsletter. If you do not want to sign up for the newsletter you can also <a href="mailto:license@cytosplore.org?subject=Cytosplore License">send us an email</a> with your name and institution.
+							</br>
+							If you have any suggestions, problems, want to share your success stories or papers published using Cytosplore, we would love to get feedback, please do not hesitate to <a href="mailto:feedback@cytosplore.org">get in touch</a>.
+						</p>
+						
+						<p>
+							<!-- Begin MailChimp Signup Form -->
+							<div id="mc_embed_signup">
+								<form action="//cytosplore.us13.list-manage.com/subscribe/post?u=ca719ad370b95810207265790&amp;id=f794dabe97" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							  	<div id="mc_embed_signup_scroll">
+	
+										<div class="mc-field-group">
+											<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address ... *">
+										</div>
+										<div class="mc-field-group">
+											<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First Name ...">
+										</div>
+										<div class="mc-field-group">
+											<input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last Name ...">
+										</div>
+										<div class="mc-field-group">
+											<input type="text" value="" name="MMERGE3" class="required" id="mce-MMERGE3" placeholder="Institution ... *">
+										</div>
+										<div class="mc-field-group">
+							    		<input type="checkbox" value="1" name="group[12093][1]" id="mce-group[12093]-12093-0" checked><label for="mce-group[12093]-12093-0">Request License</label>
+										</div>
+										<div id="mce-responses" class="clear">
+											<div class="response" id="mce-error-response" style="display:none"></div>
+											<div class="response" id="mce-success-response" style="display:none"></div>
+										</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    	<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ca719ad370b95810207265790_f794dabe97" tabindex="-1" value=""></div>
+							    	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+									</div>
+								</form>
+							</div>
+
+							<!--End mc_embed_signup-->
+						</p>
+						
+						<p>
+							Disclaimer: Cytosplore is free for academic and non-commercial use, however, if you use Cytosplore within the scope of a scientific article you must cite the original publication: T. Höllt, N. Pezzotti, V. van Unen, F. Koning, E. Eisemann, B. Lelieveldt, and A. Vilanova. <span class="middle-purple">Cytosplore: Interactive Immune Cell Phenotyping for Large Single-Cell Datasets.</span> <em>Computer Graphics Forum (Proceedings of EuroVis),</em> 35(3): pp. 171—180, 2016.
+						</p>
+						<p>
+							<img src="assets/images/download.png" alt="Download" id="download-top">
+						</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="footer" id="footer">
+			<div class="footer-wrapper">
+				<p>
+				Cytosplore is being developed in close collaboration between the
+				<a href="https://graphics.tudelft.nl" target="new">Computer Graphics and Visualization Group</a>
+				at the <a href="https://www.tudelft.nl" target="new">TU Delft</a> and the 
+				<a href="#" target="new">Computational Biology Center</a>, the 
+				<a href="https://www.lumc.nl/org/radiologie/research/LKEB/" target="new">Division of Image Processing</a>, and the 
+				<a href="https://www.lumc.nl/org/ihb/" target="new">Immunohematology and Blood Transfusion Department</a>
+				at the <a href="https://www.lumc.nl" target="new">Leiden University Medical Center</a>.
+				Cytosplore Development is supported by STW grant <a href="http://imagene.nl/vampire-project" target="new">12720 - VanPiRE</a>.
+
+			<div class="techno-images">
+				<a href="https://www.tudelft.nl" target="new"><img src="assets/images/tu.png" alt="Tu Delft" class="techno-img"></a>
+				<a href="https://www.stw.nl" target="new"><img src="assets/images/stw.png" alt="STW" class="techno-img"></a>
+				<a href="https://www.lumc.nl" target="new"><img src="assets/images/lumc.png" alt="LUMC" class="techno-img"></a>
+			</div>
+			</p>
+			
+			</div>
+		</div>
+
+	</body>
+</html>
