@@ -574,7 +574,7 @@ a.symbol {
 	width: 100%;
 	color: rgba(90, 50, 90, 0.25);
 	background-color: rgba(90, 50, 90, 0.25);
-	height: 0.5px;
+	height: 1px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
