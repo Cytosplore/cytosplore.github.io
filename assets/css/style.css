@@ -639,32 +639,52 @@ a.symbol {
   }
 }
 
-.mc_embed_signup{
-	text-align: center;
-}
-
-.mc_embed_signup_scroll{
-	margin: 15px 0px -15px 0px;
+.inputrow{
+	margin: 15px 0px 15px 0px;
 	max-width: 100%;
 	text-align: center;
-	width: 90%;
-  display: table;
-}
-
-.mc-field-group{
-  height: 57.5px;
-  width: 17%;
-	padding-left: 1.5%;
-	padding-right: 1.5%;
-  display: table-cell;
-}
-
-.clear{
-	text-align: center;
+	width: 100%;
 }
 
 input[type=text], input[type=email], select {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  	font-size: 1.0em;
+    padding: 10px;
+}
+
+@media only screen and (max-width : 640px){
+
+  input[type=text], input[type=email], select {
+      width: 100%;
+      margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width : 640px){
+
+  .left {
+    width: 30%;
+    float:left;
+    text-align: left;
+  }
+
+  .center {
+    width: 30%;
+    display: inline-block;
+    margin:0 auto;
+  }
+
+  .right {
+    width: 30%;
+    float:right;
+  }
+}
+
+textarea {
     width: 100%;
+    height: 150px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -672,7 +692,7 @@ input[type=text], input[type=email], select {
   	font-size: 1.0em;
 }
 
-input[type=submit] {
+#submitbt {
     width: 220px;
     height: 57.5px;
     background-color: rgb(90, 50, 90);
@@ -684,6 +704,8 @@ input[type=submit] {
     cursor: pointer;
   	font-size: 1.2em;
 }
+
+
 
 input[type=checkbox] {
     width: 25px;
