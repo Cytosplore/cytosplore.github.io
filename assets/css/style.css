@@ -12,7 +12,7 @@ body{
 	font-size: 1.1em;
 	letter-spacing: 0.0em;
 	line-height: 1.65em;
-	font-weight:200;
+	font-weight:300;
 	font-family: 'Roboto', sans-serif;
 	text-rendering:optimizeLegibility;
 }
@@ -51,13 +51,19 @@ h3{
 	font-size: 1.0em;
 	line-height: 1.5em;
 	letter-spacing: -0.025em;
-	font-weight:200;
+	font-weight:300;
 	margin-bottom: -35px;
 }
 
-a, a:visited, .middle-purple, em{
+a, a:visited{
 	color: rgb(90, 50, 90);
-	font-weight:300;
+	font-weight:600;
+	text-decoration: none;
+}
+
+.middle-purple, em{
+	color: rgb(90, 50, 90);
+	font-weight:400;
 	text-decoration: none;
 }
 
@@ -689,7 +695,7 @@ input[type=checkbox] {
 }
 
 .title, b{
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .authors{
