@@ -698,5 +698,6 @@ input[type=checkbox] {
 	font-weight: 400;
 }
 
-.authors{
+.page-heading{
+  margin-bottom: 30px;
 }
