@@ -319,6 +319,10 @@ nav li > a:hover, nav li > a.active{
 		margin-left: 20px;
 		float: right;
   }
+  
+  #nav-hamburger {
+    display: none;
+  }
 }
 
 @media only screen and (max-width : 1024px){
@@ -801,4 +805,8 @@ input[type=checkbox] {
 }
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
+}
+
+#nav-full, #nav-hamburger {
+  display: none;
 }
