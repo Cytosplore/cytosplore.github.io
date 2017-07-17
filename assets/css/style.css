@@ -377,6 +377,10 @@ nav li > a:hover, nav li > a.active{
   	-webkit-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
   }
+  
+  #nav-full {
+    display: none;
+  }
 }
 
 @media only screen and (max-width : 640px){
