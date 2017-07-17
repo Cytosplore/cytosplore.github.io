@@ -120,8 +120,9 @@ a, a:visited{
 .nav-container{
 	z-index: 1000;
 
-	height: 55px;
 	position: fixed;
+  width: 100%;
+	height: 55px;
 	margin: 0;
 	padding: 0;
 }
@@ -145,6 +146,15 @@ a, a:visited{
 
 	position: fixed;
 	width: 100%;
+}
+
+#nav-hamburger {
+
+	position: fixed;
+	height: 55px;
+	width: 55px;
+  left:150px;
+  top: 0px;
 }
 
 nav{
@@ -278,7 +288,7 @@ nav li > a:hover, nav li > a.active{
 }
 
 .footer{
-    border-top: 1px solid #DDD;
+  border-top: 1px solid #DDD;
 	margin-top:25px;
 	padding-top:25px;
 	padding-bottom:20px;
@@ -311,6 +321,60 @@ nav li > a:hover, nav li > a.active{
   }
 }
 
+@media only screen and (max-width : 1024px){
+
+	nav{
+		width: 90%;
+	}
+
+	nav li, nav li > a, nav li > a:visited, nav li > a.active nav li > a:hover{
+
+		font-size: 1.1em;
+	}
+}
+
+@media only screen and (max-width : 800px){
+
+	nav{
+		width: 96%;
+	}
+
+	nav li, nav li > a, nav li > a:visited, nav li > a.active nav li > a:hover{
+
+		font-size: 1.1em;
+		margin-right: 3px;
+		margin-left: 3px;
+	}
+}
+
+@media only screen and (max-width : 640px){
+
+	.nav-menu{
+		margin-top: 55px;
+	}
+	nav{
+		width: 90%;
+	}
+  
+  nav li{
+  	width: 100%;
+  }
+  
+  .nav-active-indicator{
+  	display: none;
+  }
+
+  .nav-toggled {
+    height: 330px;
+    opacity: 0.95;
+  	-o-transition: all 250ms ease-in-out;
+  	-ms-transition: all 250ms ease-in-out;
+  	-moz-transition: all 250ms ease-in-out;
+  	-webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+  }
+}
+
 @media only screen and (max-width : 640px){
 
 	.paper-img, .techno-images{
@@ -321,15 +385,6 @@ nav li > a:hover, nav li > a.active{
 
 	.main-wrapper, .footer-wrapper{
 		width: 90%;
-	}
-
-	nav{
-		width: 90%;
-	}
-
-	nav li, nav li > a, nav li > a:visited, nav li > a.active nav li > a:hover{
-
-		font-size: 1.1em;
 	}
 
   #cytosplore-logo{
@@ -344,20 +399,6 @@ nav li > a:hover, nav li > a.active{
 		letter-spacing: -0.025em;
 		line-height: 1.4em;
 	}
-
-	nav li{
-		margin-right: 5px;
-		margin-left: 5px;
-	}
-
-	nav li, nav li > a, nav li > a:visited, nav li > a.active nav li > a:hover{
-
-		font-size: 1.1em;
-	}
-
-  #cytosplore-logo{
-    margin-bottom: -30px;
-  }
 }
 
 @font-face {
@@ -705,8 +746,6 @@ textarea {
   	font-size: 1.2em;
 }
 
-
-
 input[type=checkbox] {
     width: 25px;
     height: 25px;
@@ -722,4 +761,44 @@ input[type=checkbox] {
 
 .page-heading{
   margin-bottom: 30px;
+}
+
+
+
+#nav-toggle span { position: absolute; left: 10px; top: 25px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+	background: rgb(90, 50, 90);
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px; 
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	-o-transition: all 500ms ease-in-out;
+	-ms-transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	-webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
 }

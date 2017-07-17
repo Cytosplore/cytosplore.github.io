@@ -11,10 +11,6 @@
 	  <link rel="stylesheet" href="assets/css/lity.min.css" type="text/css" />
 	  <link rel="stylesheet" href="assets/css/style.css" media="all" type="text/css"/>
 
-    <script type='text/javascript' src='assets/js/jquery.js'></script>
-	  <script type='text/javascript' src="assets/js/lity.min.js"></script>
-    <script type='text/javascript' src='assets/js/scripts.js'></script>
-
 	  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,200,100' rel='stylesheet' type='text/css'>
 
     <!-- Google Analytics -->
@@ -36,16 +32,17 @@
 
 		<div class="nav-container">
 			<div class="nav-background"></div>
-			<div class="nav-menu">
-			    <nav>
-			      <ul class="nav">
-			        <li><a href="#teaser"><img id="header_logo" src="assets/images/header_logo.png" alt="Cytosplore Logo">Cytosplore</a><div id="nav-cytosplore"></div></li>
-			        <li><a href="#team">Team</a><div id="nav-team"></div></li-->
-			        <li><a href="#publications">Publications</a><div id="nav-publications"></div></li>
-			        <li><a href="#get">Download</a><div id="nav-download"></div></li>
-			        <li><a href="documentation" target="_blank">Documentation</a><div id="nav-documentation"></div></li>
-			      </ul>
-			    </nav>
+			<div id="nav-hamburger"><a id="nav-toggle"><span></span></a></div>
+			<div class="nav-menu" id="nav-full">
+				<nav>
+		      <ul>
+		        <li><a href="#teaser" class="nav-item"><img id="header_logo" src="assets/images/header_logo.png" alt="Cytosplore Logo">Cytosplore</a><div id="nav-cytosplore"></div></li>
+		        <li><a href="#team" class="nav-item">Team</a><div id="nav-team"></div></li-->
+		        <li><a href="#publications" class="nav-item">Publications</a><div id="nav-publications"></div></li>
+		        <li><a href="#get" class="nav-item">Download</a><div id="nav-download"></div></li>
+		        <li><a href="documentation" class="nav-item" target="_blank">Documentation</a><div id="nav-documentation"></div></li>
+		      </ul>
+		    </nav>
 			</div>
 		</div>
 
@@ -371,5 +368,9 @@
 			</div>
 		</div>
 
+    <script type='text/javascript' src='assets/js/jquery.js'></script>
+	  <script type='text/javascript' src="assets/js/lity.min.js"></script>
+    <script type='text/javascript' src='assets/js/scripts.js'></script>
+		
 	</body>
 </html>

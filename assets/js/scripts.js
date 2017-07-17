@@ -7,19 +7,7 @@ $(window).scroll(scroller);
 function init() {
 	
 	sizeContent();
-
-	$("#nav-cytosplore").addClass("nav-active-indicator");
-}
-
-function sizeContent() {
-	
-	var w = $('.main-wrapper').width() - 65;
-	if( $( window ).width() > 641 ) w -= 35;
-	$('#actionvideo').width(w);
-	$('#actionvideo').height(w*9/16);
-}
-
-$(function(){
+    
 	var navHeight = $(".nav-background").height();
     $('a[href*=\\#]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -34,8 +22,55 @@ $(function(){
             }
         }
     });
-});
 
+	$("#nav-cytosplore").addClass("nav-active-indicator");
+    
+    document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
+        toggleResponsiveNav();
+    });
+    
+    var navitems = document.querySelectorAll( ".nav-item" )
+    for (var i = 0, len = navitems.length; i < len; i++) {
+        navitems[i].addEventListener( "click", function() {
+            if( $( window ).width() < 640 ){ toggleResponsiveNav(); }
+        });
+    }
+}
+
+function toggleResponsiveNav() {
+    $('#nav-toggle').toggleClass( "active" );
+    $('#nav-full').slideToggle(250);
+    $('.nav-background').toggleClass("nav-toggled");
+}
+
+function resetResponsiveNav() {
+    $('#nav-toggle').removeClass( "active" );
+    $('#nav-full').hide();
+    $('.nav-background').removeClass("nav-toggled");
+}
+
+function sizeContent() {
+	
+	var w = $('.main-wrapper').width() - 65;
+	if( $( window ).width() >= 640 ) w -= 35;
+	$('#actionvideo').width(w);
+	$('#actionvideo').height(w*9/16);
+    
+    resetResponsiveNav();
+    
+    if($( window ).width() < 640)
+    {
+        var hamburger = ($( window ).width() * 0.95 - 45) + "px"; 
+        $('#nav-hamburger').css("left", hamburger);
+        
+        $('#nav-hamburger').show();
+        $('#nav-full').hide();
+        
+    } else {
+        $('#nav-hamburger').hide();
+        $('#nav-full').show();
+    }
+}
 function scroller() {
 	
 	var scrollPosition = $(window).scrollTop() + 100;
