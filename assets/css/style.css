@@ -66,6 +66,9 @@ a, a:visited{
 	font-weight:400;
 	text-decoration: none;
 }
+.main-wrapper {
+  padding-top:75px;
+}
 
 .main-wrapper, .footer-wrapper{
 	width: 80%;
@@ -77,11 +80,6 @@ a, a:visited{
 
 .footer-wrapper{
 	text-align: center;
-}
-
-.teaser-container{
-
-	padding-top:75px;
 }
 
 #cytosplore-logo{
@@ -319,7 +317,7 @@ nav li > a:hover, nav li > a.active{
 		margin-left: 20px;
 		float: right;
   }
-  
+
   #nav-hamburger {
     display: none;
   }
@@ -359,11 +357,11 @@ nav li > a:hover, nav li > a.active{
 	nav{
 		width: 90%;
 	}
-  
+
   nav li{
   	width: 100%;
   }
-  
+
   .nav-active-indicator{
   	display: none;
   }
@@ -377,7 +375,7 @@ nav li > a:hover, nav li > a.active{
   	-webkit-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
   }
-  
+
   #nav-full {
     display: none;
   }
@@ -788,7 +786,7 @@ input[type=checkbox] {
   top: -10px;
 }
 #nav-toggle span:after {
-  bottom: -10px; 
+  bottom: -10px;
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
@@ -813,4 +811,38 @@ input[type=checkbox] {
 
 #nav-full, #nav-hamburger {
   display: none;
+}
+
+.abstract {
+  padding-top: 1rem;
+}
+
+.documentation img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+.documentation .caption {
+  margin-top: 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.documentation a {
+  font-weight: 400;
+}
+
+.documentation em {
+  color: #222;
+  font-weight: 300;
+}
+
+.documentation strong {
+  color: #222;
+  font-weight: 400;
 }

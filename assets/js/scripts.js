@@ -5,9 +5,9 @@ $(window).resize(sizeContent);
 $(window).scroll(scroller);
 
 function init() {
-	
+
 	sizeContent();
-    
+
 	var navHeight = $(".nav-background").height();
     $('a[href*=\\#]').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -24,17 +24,19 @@ function init() {
     });
 
 	$("#nav-cytosplore").addClass("nav-active-indicator");
-    
+
     document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
         toggleResponsiveNav();
     });
-    
+
     var navitems = document.querySelectorAll( ".nav-item" )
     for (var i = 0, len = navitems.length; i < len; i++) {
         navitems[i].addEventListener( "click", function() {
             if( $( window ).width() < 640 ){ toggleResponsiveNav(); }
         });
     }
+
+    scroller();
 }
 
 function toggleResponsiveNav() {
@@ -50,66 +52,78 @@ function resetResponsiveNav() {
 }
 
 function sizeContent() {
-	
+
 	var w = $('.main-wrapper').width() - 65;
 	if( $( window ).width() >= 640 ) w -= 35;
 	$('#actionvideo').width(w);
 	$('#actionvideo').height(w*9/16);
-    
+
     resetResponsiveNav();
-    
+
     if($( window ).width() < 640)
     {
-        var hamburger = ($( window ).width() * 0.95 - 45) + "px"; 
+        var hamburger = ($( window ).width() * 0.95 - 45) + "px";
         $('#nav-hamburger').css("left", hamburger);
-        
+
         $('#nav-hamburger').show();
         $('#nav-full').hide();
-        
+
     } else {
         $('#nav-hamburger').hide();
         $('#nav-full').show();
     }
 }
 function scroller() {
-	
-	var scrollPosition = $(window).scrollTop() + 100;
-	
-	var p0 = 0;
-	var p1 = $("#team").offset().top;
-	var p2 = $("#publications").offset().top;
-	var p3 = $("#get").offset().top;
-	
-	if( scrollPosition > p3 || $(window).scrollTop() + $(window).height() > $(document).height() - 100 )
-	{
-		$("#nav-cytosplore").removeClass("nav-active-indicator");
-		$("#nav-team").removeClass("nav-active-indicator");
-		$("#nav-publications").removeClass("nav-active-indicator");
-		$("#nav-download").addClass("nav-active-indicator");
-		$("#nav-about").removeClass("nav-active-indicator");
-	}
-	else if( scrollPosition > p2 )
-	{
-		$("#nav-cytosplore").removeClass("nav-active-indicator");
-		$("#nav-team").removeClass("nav-active-indicator");
-		$("#nav-publications").addClass("nav-active-indicator");
-		$("#nav-download").removeClass("nav-active-indicator");
-		$("#nav-about").removeClass("nav-active-indicator");
-	}
-	else if( scrollPosition > p1 )
-	{
-		$("#nav-cytosplore").removeClass("nav-active-indicator");
-		$("#nav-team").addClass("nav-active-indicator");
-		$("#nav-publications").removeClass("nav-active-indicator");
-		$("#nav-download").removeClass("nav-active-indicator");
-		$("#nav-about").removeClass("nav-active-indicator");
-	}
-	else
-	{
-		$("#nav-cytosplore").addClass("nav-active-indicator");
-		$("#nav-team").removeClass("nav-active-indicator");
-		$("#nav-publications").removeClass("nav-active-indicator");
-		$("#nav-download").removeClass("nav-active-indicator");
-		$("#nav-about").removeClass("nav-active-indicator");
-	}
+
+  var url = window.location.href;
+  if( url.indexOf('documentation') >= 0 )
+  {
+    $("#nav-cytosplore").removeClass("nav-active-indicator");
+    $("#nav-team").removeClass("nav-active-indicator");
+    $("#nav-publications").removeClass("nav-active-indicator");
+    $("#nav-download").removeClass("nav-active-indicator");
+    $("#nav-documentation").addClass("nav-active-indicator");
+  }
+  else {
+
+  	var scrollPosition = $(window).scrollTop() + 100;
+
+  	var p0 = 0;
+  	var p1 = $("#team").offset().top;
+  	var p2 = $("#publications").offset().top;
+  	var p3 = $("#get").offset().top;
+
+  	if( scrollPosition > p3 || $(window).scrollTop() + $(window).height() > $(document).height() - 100 )
+  	{
+  		$("#nav-cytosplore").removeClass("nav-active-indicator");
+  		$("#nav-team").removeClass("nav-active-indicator");
+  		$("#nav-publications").removeClass("nav-active-indicator");
+  		$("#nav-download").addClass("nav-active-indicator");
+  		$("#nav-documentation").removeClass("nav-active-indicator");
+  	}
+  	else if( scrollPosition > p2 )
+  	{
+  		$("#nav-cytosplore").removeClass("nav-active-indicator");
+  		$("#nav-team").removeClass("nav-active-indicator");
+  		$("#nav-publications").addClass("nav-active-indicator");
+  		$("#nav-download").removeClass("nav-active-indicator");
+  		$("#nav-documentation").removeClass("nav-active-indicator");
+  	}
+  	else if( scrollPosition > p1 )
+  	{
+  		$("#nav-cytosplore").removeClass("nav-active-indicator");
+  		$("#nav-team").addClass("nav-active-indicator");
+  		$("#nav-publications").removeClass("nav-active-indicator");
+  		$("#nav-download").removeClass("nav-active-indicator");
+  		$("#nav-documentation").removeClass("nav-active-indicator");
+  	}
+  	else
+  	{
+  		$("#nav-cytosplore").addClass("nav-active-indicator");
+  		$("#nav-team").removeClass("nav-active-indicator");
+  		$("#nav-publications").removeClass("nav-active-indicator");
+  		$("#nav-download").removeClass("nav-active-indicator");
+  		$("#nav-documentation").removeClass("nav-active-indicator");
+  	}
+  }
 }

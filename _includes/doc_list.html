@@ -1,0 +1,33 @@
+<p>
+  {% for post in site.posts %}
+    {% if post.category == "prerun" %}
+      {% assign ifprerun = 'true' %}
+    {% elsif post.category == "tsne" %}
+      {% assign iftsne = 'true' %}
+    {% endif %}
+  {% endfor %}
+
+  {% if ifprerun %}
+    <h2>System Reuiqrements & Installation</h2>
+
+    <ul>
+      {% for post in site.posts %}
+        {% if post.category == "prerun" %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if iftsne %}
+    <h2>A-tSNE</h2>
+
+    <ul>
+      {% for post in site.posts %}
+        {% if post.category == "tsne" %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+</p>
