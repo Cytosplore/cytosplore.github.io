@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Frequently Asked Questions"
+date:   2017-06-30
+category: faq
+permalink: /documentation/faq
+---
+**The Cytosplore installation was sucessful, but when I try to run it Iget an error message saying that VCOMP120.DLL was not found.**
+
+ The error relates to the Microsoft Visual Studio runtime, which should be installed automatically, but it seems something went off the rails there. You can download the necessary files directly from Microsoft at [https://www.microsoft.com/en-gb/download/details.aspx?id=40784](https://www.microsoft.com/en-gb/download/details.aspx?id=40784){:target="_blank_"}
+
+ <br/>
+ **The Cytosplore installation was sucessful, it does not accept my license code.**
+
+The license code is validated via the internet with our license server. If you are offline try to connect to the internet. If you have a firewall or similar active try to diable it for a few minutes and allow Cytosplore to connect to the server for verification. Cytosplore does not send any other data besides what is necessary for the activation.
+If that all does not work, get in touch so we can send you another license code.
+
+<br/>
+**OK, the installation went through, Cytosplore is activated and starts, but I only see an empty window. Is something broken?**
+
+That is normal. Cytosplores interface is completely data-driven. Try to load an fcs file via _file_ in the menu-bar. Once that is done simply start an analysis via the _analysis_ entry in the menu-bar.
+
+<br/>
+**I try to run an A-tSNE analysis, but I only get weird error messages in the console window, what is going wrong?**
+
+We use visualization accelerated by the graphics card for the A-tSNE plots. Unfortunately, some of the integrated graphics cards in typical office machines cause problems. Try to update all your drivers and if this does not help check the [System Requirements](/documentation/requirements) to see if you could upgrade your computer.
+
+<br/>

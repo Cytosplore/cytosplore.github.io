@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "First Run"
+date:   2017-06-30
+category: prerun
+permalink: /documentation/firstrun
+---
+When running Cytosplore for the first time you will need to enter the license key we sent you. If you do not have a license key yet, use the Contact button in the license dialog or the form on the [main site][main].
+
+
+![Running Cytosplore for the first time][firstrun_license]{:width="800px"}<span class="caption">Figure 1: Running Cytosplore for the first time. The application will show three windows; the log window (black in the back) showing some logging information, the main window (center) and the license dialog (on top of the main window). Enter your license key here to start using Cytosplore.</span>
+
+[firstrun_license]: {{ site.baseurl }}/assets/documentation/firstrun_license.png "Screenshot of running Cytosplore for the first time."
+
+[main]: https://www.cytosplore.org/#get
