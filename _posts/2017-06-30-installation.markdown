@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Installation"
-date:   2017-06-30
+date:   2017-01-02
 category: prerun
 permalink: /documentation/installation
 ---

@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Application Overview"
+date:   2017-01-15
+category: startingup
+permalink: /documentation/applicationoverview
+---
+When running Cytosplore the main window will be mostly empty on startup, as the user interface is completely data-driven.
+The main Cytosplore window is separated in three main areas;
+* The _Menubar_ on top
+* The _Settings Widget_ by default on the left
+* The _Main View Area_ by default on the right
+
+![Cytosplore Main Window Overview][overview_app]{:width="800px"}<span class="caption">Figure 1: Screenshot of the main Cytosplore window.</span>
+
+When starting a new analysis using the _Analysis_ menu in the _Menubar_ a corresponding settings panel will be added to the _Settings Widget_ and a view widget will be added to the _Main View Area_. When running multiple analyses at the same time the _Settings Widget_ contains a tab for each analysis, while multiple visualization views will be shown at the same time.
+
+![Cytosplore With Two Analyses Open][overview_multi]{:width="800px"}<span class="caption">Figure 2: Screenshot of the main Cytosplore window with two analyses open.</span>
+
+
+Visualization views split into three areas;
+* The _Title Bar_ for moving or closing the view
+* The _Main Visualization Area_
+* The _Visualization Settings Area_
+
+![Main view areas][overview_view]{:width="400px"}<span class="caption">Figure 3: The main areas of a SPADE analysis view.</span>
+
+
+
+All views in Cytosplore, including the Settings Widget can be _popped out_ in a separate window or closed using the _Title Bar_ of each view.
+
+![View title bar][overview_viewbar]{:width="500px"}<span class="caption">Figure 4: The _Title Bar_ and its functions of a SPADE analysis view.</span>
+
+
+Views can also simply be repositioned by clicking and dragging the _Title Bar_ of a view and moving the view to the desired position. The blue area shows where the view will be positioned when releasing the mouse button.
+
+![Repositioning a view][overview_drag]{:width="900px"}<span class="caption">Figure 5: Repositioning a view by clicking and dragging its _Title Bar_.</span>
+
+
+Finally, views can be closed or (re-) opened via a right click on the _Menubar_ or any views _Title Bar_. A context menu will open showing all available views, where open views are indicated by a check mark.
+
+![View context menu][overview_rightclick]{:width="400px"}<span class="caption">Figure 6: The context menu to open or close views.</span>
+
+[overview_app]: {{ site.baseurl }}/assets/documentation/overview_app.png "Screenshot of the main Cytosplore window."
+[overview_multi]: {{ site.baseurl }}/assets/documentation/overview_multi.png "Screenshot of the main Cytosplore window with two analyses open."
+[overview_drag]: {{ site.baseurl }}/assets/documentation/overview_drag.png "Screenshot of repositioning a visualization view."
+[overview_view]: {{ site.baseurl }}/assets/documentation/overview_view.png "Screenshot of a visualization view."
+[overview_viewbar]: {{ site.baseurl }}/assets/documentation/overview_viewbar.png "Functions of the views title bar."
+[overview_rightclick]: {{ site.baseurl }}/assets/documentation/overview_rightclick.png "Right click on the Menubar."

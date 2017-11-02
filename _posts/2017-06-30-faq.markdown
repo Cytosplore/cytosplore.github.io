@@ -9,14 +9,8 @@ permalink: /documentation/faq
 
  The error relates to the Microsoft Visual Studio runtime, which should be installed automatically, but it seems something went off the rails there. You can download the necessary files directly from Microsoft at [https://www.microsoft.com/en-gb/download/details.aspx?id=40784](https://www.microsoft.com/en-gb/download/details.aspx?id=40784){:target="_blank_"}
 
- <br/>
- **The Cytosplore installation was sucessful, it does not accept my license code.**
-
-The license code is validated via the internet with our license server. If you are offline try to connect to the internet. If you have a firewall or similar active try to diable it for a few minutes and allow Cytosplore to connect to the server for verification. Cytosplore does not send any other data besides what is necessary for the activation.
-If that all does not work, get in touch so we can send you another license code.
-
 <br/>
-**OK, the installation went through, Cytosplore is activated and starts, but I only see an empty window. Is something broken?**
+**OK, the installation went through and Cytosplore starts, but I only see an empty window. Is something broken?**
 
 That is normal. Cytosplores interface is completely data-driven. Try to load an fcs file via _file_ in the menu-bar. Once that is done simply start an analysis via the _analysis_ entry in the menu-bar.
 
@@ -24,5 +18,10 @@ That is normal. Cytosplores interface is completely data-driven. Try to load an 
 **I try to run an A-tSNE analysis, but I only get weird error messages in the console window, what is going wrong?**
 
 We use visualization accelerated by the graphics card for the A-tSNE plots. Unfortunately, some of the integrated graphics cards in typical office machines cause problems. Try to update all your drivers and if this does not help check the [System Requirements](/documentation/requirements) to see if you could upgrade your computer.
+
+<br/>
+**I try to run an A-tSNE or HSNE analysis, but it takes forever?**
+
+If you run a-tSNE or HSNE with a very large amount of cells it can easily take a long time (while HSNE can process ~1 million cells in a few minutes, A-tSNE will easily take hours for this on a typical computer). If you have enough memory the computation time is dependent on the raw CPU power, however, if you run out of memory the process will be slowed down significantly and might not finish at all with little indication. Check the Windows Performance Monitor (Press Ctrl + Shift + Esc). If the bottom line states Physical Memory close to 100% this means you are memory limited and the computation will be very slow. Try downsampling the data or adding memory to
 
 <br/>

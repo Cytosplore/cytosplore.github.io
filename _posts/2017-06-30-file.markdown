@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "Loading Files"
+date:   2017-02-01
+category: startingup
+permalink: /documentation/filehandling
+---
+To open one or multiple fcs-files select *File* in the menu bar and then *Open FCS-File(s) ...*. Alternatively press and hold the *Ctrl-key* and press the *o-key*. You should load all files you want to analyse at once, right after opening the application.
+
+![File Menu][file_menu]{:width="800px"}<span class="caption">Figure 1: The file menu selected in the main window.</span>
+
+
+The file dialog allows the selection of fcs-files, only. You can open a single file by clicking on it an select *Open* or multiple files, either by dragging a box around all files or by selecting one after the other while holding the *Ctrl-key* or a continuous group by holding the *Shift-key* while clicking the first and last item of the group.
+
+![File Dialog][file_open]{:width="800px"}<span class="caption">Figure 2: The Cytosplore file open dialog.</span>
+
+
+After clicking *Open* the files will be loaded into memory and once finished the Quickstart dialog will pop up.
+Here, you have multiple options. The first checkbox allows you to add a unique tag for every file opened, which can later be user for visualization. This option will add a channel with the name *CSPLR_ST* which will also be available in files that are exported from Cytosplore. A file called CSPLR_ST.txt will automatically be saved next to the loaded fcs files. The file lists all fcs files with the corresponding sample tag for reference.
+
+![Quickstart Dialog][file_opened]{:width="300px"}<span class="caption">Figure 3: Quickstart dialog after opening a file.</span>
+
+
+The second checkbox allows to apply hyperbolic arc-sin 5 transformation (for some information on this transformation see for example the [cytobank help][asin5]{:target="_blank_"}). When selecting this option the box labelled *Select Markers for ArcSinH Transform* will automatically open and allow you to specify to which channels the transformation will be applied.
+Here, some functions (invert, load, set deaulft) are available for convenience. For more information see [marker selection dialog][markerselection].
+
+![Quickstart Dialog with Marker Selection][file_asinh]{:width="400px"}<span class="caption">Figure 4: Quickstart dialog with marker selection panel opened for the hyperbolic arc-sin 5 transform.</span>
+
+
+Once the settings for sample tag and hyperbolic arc-sin 5 transform are defined, the dialog can be closed by clicking one of the buttons in the bottom row. _Start SPADE_ and _Start A-tSNE_ will open a respective analysis, _OK_ will simply close the dialog and further actions can be done through the menu bar.
+
+
+[file_menu]: {{ site.baseurl }}/assets/documentation/file_menu.png "Screenshot of the main window with the file open menu opened."
+[file_open]: {{ site.baseurl }}/assets/documentation/file_open.png "Screenshot of the file open dialog."
+[file_opened]: {{ site.baseurl }}/assets/documentation/file_opened.png "Screenshot of the quickstart dialog."
+[file_asinh]: {{ site.baseurl }}/assets/documentation/file_asinh.png "Screenshot of the quickstart dialog with marker selection for the asinh5 transform opened."
+
+[main]: https://www.cytosplore.org/#get
+[asin5]: https://support.cytobank.org/hc/en-us/articles/206148057-About-the-Arcsinh-transform
+[markerselection]: {{ site.baseurl }}/documentation/markerselection
