@@ -143,7 +143,7 @@ function handleOutboundLinkClicks(e) {
 var elements = document.getElementsByTagName('a');
 for(var i = 0, len = elements.length; i < len; i++) {
 	var link = elements[i].href;
-	if(link.indexOf("/documentation/") < 0 && link.indexOf("#") < 0 )
+	if(link.indexOf("/documentation") < 0 && link.indexOf("#") < 0 )
 	{
 		console.log(elements[i].href);
 		elements[i].onclick = function (e) {
