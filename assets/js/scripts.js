@@ -127,3 +127,27 @@ function scroller() {
   	}
   }
 }
+
+function handleOutboundLinkClicks(e) {
+	if (ga.hasOwnProperty("loaded") && ga.loaded == true)
+	{
+	  ga('send', 'event', {
+	    eventCategory: 'Outbound Link',
+	    eventAction: 'click',
+	    eventLabel: e.target.parentNode.href,
+	    transport: 'beacon'
+	  });
+	}
+}
+
+var elements = document.getElementsByTagName('a');
+for(var i = 0, len = elements.length; i < len; i++) {
+	var link = elements[i].href;
+	if(link.indexOf("/documentation/") < 0 && link.indexOf("#") < 0 )
+	{
+		console.log(elements[i].href);
+		elements[i].onclick = function (e) {
+	  	handleOutboundLinkClicks(e);
+	  }
+	}
+}
