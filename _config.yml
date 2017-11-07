@@ -27,10 +27,8 @@ url: "http://www.cytosplore.org/" # the base hostname & protocol for your site, 
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
   - jekyll-redirect-from
-  whitelist:
-  - jekyll-feed
+whitelist:
   - jekyll-redirect-from
 exclude:
   - Gemfile
