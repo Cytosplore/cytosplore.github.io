@@ -14,24 +14,54 @@
 </head>
 
 <body>
-    <!------------------------------------------------------------------------------------->
 
-    <h1>Version 1.0.3</h1>
+    <h1>Version 2.1.2</h1>
 
     <h2>New Features</h2>
     <ul>
-        <li>Cytosplore does no longer require a license key.</li>
+        <li>If one of the name fields in fcs is not set but the other is the name will be copied to the empty one.</li>
+        <li>Sets NaN values to zero on load (a warning will be printed in the console window).</li>
     </ul>
 
-    <h2>Bugfixes</h2>
+    <!------------------------------------------------------------------------------------->
+
+    <h1>Version 2.1.1</h1>
+
+    <h2>New Features</h2>
     <ul>
         <li>
-            Some fcs files contain invalid values / NaN. These are now set to 0 on load.
-            A warning is shown in the command window if this was the case, including the number of fixed values.
-            If this behaviour is not desired make sure to clean your fcs files before importing in Cytosplore.
+            Data Level HSNE Coordinates are now added to exported fcs files if available.
+            If not zoomed into the data level coordinates will be (0, 0) for the corresponding points.
+            There is no indication of the map the coordinates belong to within the files, make sure to aptly name your HSNE analyses and exported files to keep this information.
         </li>
+        <li>
+            It is now possible to save clusters while maintaining the original sample structure.
+            I.e. assume you have two samples as separate fcs files and 3 resulting clusters
+            <ul>
+                <li>Using <em>Save Clusters ...</em> saves them as cluster1.fcs, cluster2.fcs and cluster3.fcs as before</li>
+                <li>Using <em>Save Clusters (per sample)...</em> saves them as cluster1-Sample1.fcs, cluster1-Sample2.fcs, cluster2-Sample1.fcs and and so on.</li>
+            </ul>
+        </li>
+        <li>Added a confirmation dialog on exit.</li>
     </ul>
 
+    <!------------------------------------------------------------------------------------->
+
+    <h1>Version 2.1.0</h1>
+
+    <h2>Public Release of Cytosplore+HSNE</h2>
+    <ul>
+        <li>
+            This version of Cytosplore makes HSNE publicly available for the first time.
+            Please see the Nature Communications paper
+            <a href="http://dx.doi.org/10.1038/s41467-017-01689-9">
+              <em>
+                Interactive Visual Analysis of Mass Cytometry Data by Hierarchical Stochastic Neighbor Embedding Reveals Rare Cell Types
+              </em>
+            </a>
+            for full detail.
+        </li>
+    </ul>
     <!------------------------------------------------------------------------------------->
 
     <h1>Version 1.0.2</h1>
@@ -44,7 +74,7 @@
             Test them in another tool to make sure they are OK.
         </li>
     </ul>
-    
+
     <!------------------------------------------------------------------------------------->
 
     <h1>Version 1.0.1</h1>
@@ -60,7 +90,7 @@
     </ul>
 
     <!------------------------------------------------------------------------------------->
-    
+
     <!------------------------------------------------------------------------------------->
 
     <h1>Version 1.0</h1>
