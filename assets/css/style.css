@@ -580,6 +580,11 @@ a.symbol {
   background-size: 80px 80px
 }
 
+#portrait-am{
+  background: url(../images/team/am.jpg) no-repeat;
+  background-size: 80px 80px
+}
+
 .portrait-name{
   color: rgb(90, 50, 90);
 }
@@ -875,6 +880,8 @@ input[type=checkbox] {
   border: 0px;
 	border-radius: 0 5px 5px 0;
   margin: 0;
+	width: 100%;
+	padding: 0 16px;
   font-size: 1.0em;
   font-weight: 300;
   font-family: 'Roboto', sans-serif;
@@ -909,6 +916,7 @@ input::placeholder {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  color: white;
   background-color: rgba(90, 50, 90,1.0);
 	border-radius: 5px;
 }
