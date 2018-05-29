@@ -15,13 +15,28 @@
 
 <body>
 
+    <h1>Version 2.1.4</h1>
+
+    <h2>New Features</h2>
+    <ul>
+        <li>Limited internal beta release of the macOS version.</li>
+        <li>Cofactor for the Hyperbolic Arc Sin transformation can now be set (with a default value of 5).</li>
+    </ul>
+
+    <h2>Bugfixes</h2>
+    <ul>
+        <li>Several minor bugfixes.</li>
+    </ul>
+
+    <!------------------------------------------------------------------------------------->
+
     <h1>Version 2.1.3</h1>
 
     <h2>Bugfixes</h2>
     <ul>
-        <li>Fixes a bug that would incrroectly represent the default value for 'Random Walks Threshold' in HSNE advanced parameters as 1.0 and limit its range to 0.0 .. 1.0 even though 1.5 is used as the default setting.</li>
+        <li>Fixes a bug that would limit the HSNE Random Walks Threshold parameter range to [0.0..1.0] even though the default value used is 1.5.</li>
     </ul>
-    
+
     <!------------------------------------------------------------------------------------->
 
     <h1>Version 2.1.2</h1>
@@ -58,39 +73,33 @@
 
     <h1>Version 2.1.0</h1>
 
-    <h2>Public Release of Cytosplore+HSNE</h2>
-    <ul>
-        <li>
-            This version of Cytosplore makes HSNE publicly available for the first time.
-            Please see the Nature Communications paper
-            <a href="http://dx.doi.org/10.1038/s41467-017-01689-9">
-              <em>
-                Interactive Visual Analysis of Mass Cytometry Data by Hierarchical Stochastic Neighbor Embedding Reveals Rare Cell Types
-              </em>
-            </a>
-            for full detail.
-        </li>
-    </ul>
+    <h2>Public HSNE Version</h2>
+
     <!------------------------------------------------------------------------------------->
 
-    <h1>Version 1.0.2</h1>
+    <h1>Version 2.0.7</h1>
 
     <h2>Bugfixes</h2>
     <ul>
-        <li>
-            FCS writer now saves to FCS 3.1 to fix a problem with large files introduced in 1.0.1.
-            If you have saved fcs files with more than 500.000 cells in version 1.0.1 these might be broken.
-            Test them in another tool to make sure they are OK.
-        </li>
+        <li>FCS Files are now always written as FCS3.1 with to allow files larger than 99.999.999 cells.</li>
     </ul>
 
     <!------------------------------------------------------------------------------------->
 
-    <h1>Version 1.0.1</h1>
+    <h1>Version 2.0.6</h1>
+
+    <h2>Bugfixes</h2>
+    <ul>
+        <li>Fixes a problem where some exported fcs files could not be read in other tools such as R.</li>
+    </ul>
+
+    <!------------------------------------------------------------------------------------->
+
+    <h1>Version 2.0.5</h1>
 
     <h2>New Features</h2>
     <ul>
-        <li>FCS Reader: Supports loading of some FCS 3.1 files.</li>
+        <li>FCS Reader: Adds possibility to load some FCS 3.1 files.</li>
     </ul>
 
     <h2>Bugfixes</h2>
@@ -100,11 +109,60 @@
 
     <!------------------------------------------------------------------------------------->
 
+    <h1>Version 2.0.4</h1>
+
+    <h2>New Features</h2>
+    <ul>
+        <li>t-SNE/HSNE: The scatterplot view can now be recorded as video. Toggle the record switch (below "dark mode") to turn recording on and off and once done save a video through in the screen shot dialog (camera icon).</li>
+        <li>FCS Reader: now allows loading files with different markers as long as the number of markers is the same. Different markers will be represented as -multiple- in the marker list and should be excluded from the computation.</li>
+    </ul>
+
+    <h2>Bugfixes</h2>
+    <ul>
+        <li>t-SNE/HSNE: Removes export clusters from scatterplot context menu, when clusters are not up to date.</li>
+        <li>FCS Reader: now gives the correct error if the number of markers does not match.</li>
+        <li>General: Updates the about dialog.</li>
+        <li>General: Changes contact email to license@cytosplore.org</li>
+    </ul>
+
     <!------------------------------------------------------------------------------------->
 
-    <h1>Version 1.0</h1>
+    <h1>Version 2.0.3</h1>
+
+    <h2>Bugfixes</h2>
     <ul>
-        <li>Initial Release of Cytosplore for research use.</li>
+        <li>FCS Reader: now reads the correct data, for rare cases if the startbyte was only defined in the textheader but not in the first 64 bytes of the file.</li>
+    </ul>
+
+    <!------------------------------------------------------------------------------------->
+
+    <h1>Version 2.0.2</h1>
+
+    <h2>New Features</h2>
+    <ul>
+        <li>Now prints the Kullback-Leibler divergence every hundred iterations and on finish/stop when running tSNE analysis.</li>
+        <li>Adds support for BD FACSDiva FCS files.</li>
+    </ul>
+
+    <!------------------------------------------------------------------------------------->
+
+    <h1>Version 2.0.1</h1>
+
+    <h2>New Features</h2>
+    <ul>
+        <li>Adds shortkeys to select all (Ctrl+A) and deselect (Ctrl+D) cells in the scatterplots (t-SNE and HSNE).</li>
+        <li>Adds the possibility to export the origin statistics for all clusters from the heatmap view (right click -> Save Cell Origins as CSV... exports one csv file per cluster.)</li>
+    </ul>
+    <h2>Bugfixes</h2>
+    <ul>
+        <li>Uses correct dualslider styling in SPADE view.</li>
+    </ul>
+
+    <!------------------------------------------------------------------------------------->
+
+    <h1>Version 2.0</h1>
+    <ul>
+        <li>Initial Release of Cytosplore+HSNE for research use.</li>
     </ul>
 
     <!------------------------------------------------------------------------------------->
