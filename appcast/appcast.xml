@@ -5,11 +5,24 @@
         <description>Most recent updates to Cytosplore</description>
         <language>en</language>
         <item>
+          <title>Version 2.1.5</title>
+          <sparkle:releaseNotesLink>
+            https://cytosplore.github.io/appcast/release_notes.html
+          </sparkle:releaseNotesLink>
+          <pubDate>Thu, 31 May 2018 12:00:00 +0100</pubDate>
+          <enclosure url="https://cytosplore.github.io/download/win/2.1.5/install_cytosplore.exe"
+                     sparkle:version="2.1.5"
+                     sparkle:os="windows"
+                     sparkle:installerArguments="/SILENT /SP-"
+                     length="0"
+                     type="application/octet-stream" />
+        </item>
+        <item>
           <title>Version 2.1.4</title>
           <sparkle:releaseNotesLink>
             https://cytosplore.github.io/appcast/release_notes.html
           </sparkle:releaseNotesLink>
-          <pubDate>Mon, 21 Aug 2017 16:00:00 +0100</pubDate>
+          <pubDate>Tue, 29 May 2015 12:00:00 +0100</pubDate>
           <enclosure url="https://cytosplore.github.io/download/win/2.1.4/install_cytosplore.exe"
                      sparkle:version="2.1.4"
                      sparkle:os="windows"
