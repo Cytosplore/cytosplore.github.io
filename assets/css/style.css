@@ -26,6 +26,10 @@ hr {
 	margin-bottom: -15px;
 }
 
+
+.documentation hr {
+	margin-bottom: 0px;
+}
 h1{
 	margin: 0;
 	padding: 0;
@@ -268,7 +272,7 @@ nav li > a:hover, nav li > a.active{
 .paper-link{
 	width: 26px;
 	margin-right: 8px;
-	opacity: 0.25;
+	opacity: 0.4;
 	float: left;
 	-o-transition:.75s;
 	-ms-transition:.75s;
@@ -277,12 +281,13 @@ nav li > a:hover, nav li > a.active{
 	transition:0.75s;
 }
 
-.paper-link:hover{
-	opacity: 0.85;
+.paper-link a{
+	color: #222;
 }
 
-.paper-link-img{
-	width: 100%;
+.paper-link:hover, .paper-link a:hover{
+	opacity: 0.9;
+	color: rgb(90, 50, 90);
 }
 
 .footer{
