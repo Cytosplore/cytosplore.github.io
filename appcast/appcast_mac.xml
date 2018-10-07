@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+    <channel>
+        <title>Cytosplore Appcast</title>
+        <description>Most recent updates to Cytosplore</description>
+        <language>en</language>
+        <item>
+          <title>Version 2.2.0</title>
+          <sparkle:releaseNotesLink>
+            https://www.cytosplore.org/appcast/release_notes.html
+          </sparkle:releaseNotesLink>
+          <pubDate>Mon, 8 Oct 2018 12:00:00 +0100</pubDate>
+          <enclosure url="https://www.cytosplore.org/download/macos/Cytosplore 2.2.0.dmg"
+                     sparkle:version="2.2.0"
+                     length="0"
+                     type="application/octet-stream" />
+        </item>
+    </channel>
+</rss>
