@@ -9,7 +9,20 @@ Here you can find the releases and change notes of Cytosplore. If you need an ol
 
 ---
 
-**Version 2.1.5** &emsp; [<i class="fab fa-windows"></i> Windows](https://www.cytosplore.org/download/win/2.1.5/install_cytosplore.exe)
+**Version 2.2.0** &emsp; [<i class="fab fa-windows"></i> Windows 7 and higher](https://www.cytosplore.org/download/win/2.2.0/install_cytosplore.exe) &emsp; [<i class="fab fa-apple"></i> MacOS 10.12 (Sierra) and higher](https://www.cytosplore.org/download/macos/Cytosplore.2.2.0.dmg)
+
+**Initial Release for MacOS**
+
+Improvements
+* Now uses A-tSNE implementation from [HDI Library](https://github.com/Nicola17/High-Dimensional-Inspector).
+* Increases the range for arcsin co-factors.
+
+Bugfixes
+* Application now closes without confirmation dialog when updating.
+
+---
+
+**Version 2.1.5** &emsp; [<i class="fab fa-windows"></i> Windows 7 and higher](https://www.cytosplore.org/download/win/2.1.5/install_cytosplore.exe)
 
 Bugfixes
 * Fixes an issue with some out of spec fcs files.
@@ -17,7 +30,7 @@ Bugfixes
 ---
 
 
-**Version 2.1.4** &emsp; [<i class="fab fa-windows"></i> Windows](https://www.cytosplore.org/download/win/2.1.4/install_cytosplore.exe)
+**Version 2.1.4** &emsp; [<i class="fab fa-windows"></i> Windows 7 and higher](https://www.cytosplore.org/download/win/2.1.4/install_cytosplore.exe)
 
 New Features
 * It is now possible to set the co-factor for the arcsinh transformation.

@@ -94,11 +94,19 @@ a, a:visited{
   margin-bottom: -60px;
 }
 
-#download-top{
-	width: 220px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+.download-p {
+		width: 220px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+}
+
+#download-top, #download-bt {
+		width: 220px;
+}
+
+.centered {
+		text-align: center;
 }
 
 .badge
@@ -592,11 +600,12 @@ a.symbol {
 
 .portrait-name{
   color: rgb(90, 50, 90);
+	font-size: 0.9em;
 }
 
 .portrait-text{
   color: rgb(90, 50, 90);
-	font-size: 0.8em;
+	font-size: 0.7em;
 }
 
 .portrait .popover {

@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Installation"
+title:  "Installation (Windows)"
 date:   2017-01-02
 category: prerun
 permalink: /documentation/installation
 ---
 We provide an easy to use installer including all dependencies for Windows. You can download the installer from the [main site][main].
-Clicking the download button will save the installer to your disk. Doubleclick the icon to start the installation. It looks like this in your download folder:
+Clicking the download button will save the installer to your disk. Double-click the icon to start the installation. It looks like this in your download folder:
 
 ![Cytosplore Installer Icon][installer_icon]{:width="90px"}<span class="caption">Figure 1: The Cytosplore Installer Icon after downloading.</span>
 
@@ -14,8 +14,10 @@ The installer will ask for administrator rights on the computer. This is due to 
 
 ![Cytosplore Installer Admin Rights Dialog][installer_admin]{:width="340px"}<span class="caption">Figure 2: The dialog asking for administrator rights on Windows 10. Click *__Yes__*, to continue the installation.</span>
 
-The installer will show the license agreement, that your have to accept. Most importantly it states that the software can be used free of charge in an academic setting and if it is used in the scope of a scientific article the original Cytosplore article needs to be cited:
-T. Hollt, N. Pezzotti, V. van Unen, F. Koning, E. Eisemann, B. Lelieveldt, and A. Vilanova. **Cytosplore: Interactive Immune Cell Phenotyping for Large Single-Cell Datasets**. *Computer Graphics Forum*, 35(3): pp. 171-180, 2016.
+The installer will show the license agreement, that your have to accept. Most importantly it states that the software can be used free of charge in an academic setting and if it is used in the scope of a scientific article the original Cytosplore articles need to be cited:
+T. Hollt, N. Pezzotti, V. van Unen, F. Koning, E. Eisemann, B. Lelieveldt, and A. Vilanova. **Cytosplore: Interactive Immune Cell Phenotyping for Large Single-Cell Datasets**. *Computer Graphics Forum*, 35(3): pp. 171--180, 2016.
+and
+V. van Unen, T. Höllt, N. Pezzotti, N. Li, M. Reinders, E. Eisemann, A. Vilanova, F. Koning, and B.P.F. Lelieveldt. **Visual Analysis of Mass Cytometry Data by Hierarchical Stochastic Neighbor Embedding Reveals Rare Cell Types**. *Nature Communications*, 8(1740), 2017.
 
 Click *__I accept the agreement__* and then *__Next >__*.
 
@@ -41,11 +43,11 @@ After a succesful installation the following dialog will show. You can decide wh
 
 ![Cytosplore Installer Finished Dialog][installer_finished]{:width="376px"}<span class="caption">Figure 8: The final dialog. Click *__Finish__*, to finalize the installation and start Cytosplore.</span>
 
-Continue at [First Run][first_run].
+Continue at [Application Overview][first_run].
 
 [main]: https://www.cytosplore.org/#get
 [vcredist]: https://www.microsoft.com/en-gb/download/details.aspx?id=40784
-[first_run]: {{ site.baseurl }}/documentation/firstrun
+[first_run]: {{ site.baseurl }}/documentation/applicationoverview
 
 [installer_icon]: {{ site.baseurl }}/assets/documentation/install_icon.png "Cytosplore Installer Icon"
 [installer_admin]: {{ site.baseurl }}/assets/documentation/installer_admin.png "Cytosplore Installer Admin Rights Dialog"
