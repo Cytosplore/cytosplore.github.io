@@ -36,17 +36,20 @@ function init() {
         });
     }
 
+    scroller();
+
 		var version = "2.2.0";
 
-		if (navigator.appVersion.indexOf("Mac")!=-1){
-				document.getElementById("download-bt").src="assets/images/download-mac.png";
-				document.getElementById("download-link").href="download/macos/Cytosplore."+version+".dmg";
-		} else {
-				document.getElementById("download-bt").src="assets/images/download-win.png";
-				document.getElementById("download-link").href="download/win/"+version+"/install_cytosplore.exe";
-		}
-
-    scroller();
+    if(document.getElementById("download-bt") != null)
+    {
+  		if (navigator.appVersion.indexOf("Mac")!=-1){
+  				document.getElementById("download-bt").src="assets/images/download-mac.png";
+  				document.getElementById("download-link").href="download/macos/Cytosplore."+version+".dmg";
+  		} else {
+  				document.getElementById("download-bt").src="assets/images/download-win.png";
+  				document.getElementById("download-link").href="download/win/"+version+"/install_cytosplore.exe";
+  		}
+    }
 }
 
 function toggleResponsiveNav() {
