@@ -10,6 +10,8 @@
       {% assign iftsne = 'true' %}
     {% elsif post.category == "hsne" %}
       {% assign ifhsne = 'true' %}
+    {% elsif post.category == "cytofast" %}
+      {% assign ifcytofast = 'true' %}
     {% endif %}
   {% endfor %}
 
@@ -69,6 +71,18 @@
     <ul>
       {% for post in sorted_posts %}
         {% if post.category == "hsne" %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if ifcytofast %}
+    <h2>Cytofast</h2>
+
+    <ul>
+      {% for post in sorted_posts %}
+        {% if post.category == "cytofast" %}
           <li><a href="{{ post.url }}">{{ post.title }}</a></li>
         {% endif %}
       {% endfor %}

@@ -38,7 +38,7 @@ function init() {
 
     scroller();
 
-		var version = "2.2.0";
+		var version = "2.2.1";
 
     if(document.getElementById("download-bt") != null)
     {

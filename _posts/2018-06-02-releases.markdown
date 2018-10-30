@@ -9,6 +9,18 @@ Here you can find the releases and change notes of Cytosplore. If you need an ol
 
 ---
 
+**Version 2.2.1** &emsp; [<i class="fab fa-windows"></i> Windows 7 and higher](https://www.cytosplore.org/download/win/2.2.1/install_cytosplore.exe) &emsp; [<i class="fab fa-apple"></i> MacOS 10.12 (Sierra) and higher](https://www.cytosplore.org/download/macos/Cytosplore.2.2.1.dmg)
+
+**Initial Release for MacOS**
+
+Improvements
+* Now suggests the number of scales for HSNE based on the input size.
+
+Bugfixes
+* Fixes a bug, where the HSNE embedding would not initialize properly on re-embedding.
+
+---
+
 **Version 2.2.0** &emsp; [<i class="fab fa-windows"></i> Windows 7 and higher](https://www.cytosplore.org/download/win/2.2.0/install_cytosplore.exe) &emsp; [<i class="fab fa-apple"></i> MacOS 10.12 (Sierra) and higher](https://www.cytosplore.org/download/macos/Cytosplore.2.2.0.dmg)
 
 **Initial Release for MacOS**
