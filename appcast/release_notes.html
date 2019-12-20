@@ -15,31 +15,6 @@
 
 <body>
 
-    <h1>Version 2.3.0</h1>
-
-    <h2>New Features</h2>
-    <ul>
-        <li>Up to 100x speedup (macOS: 10x) for a-tSNE and HSNE gradient descent by adding latest HDI, providing gradient descent using the GPU.</li>
-        <li>Up to 10x speedup for a-tSNE and HSNE knn computation using the annoy aknn library.</li>
-        <li>Now provides selection of three different approximated knn algorithms in A-tSNE and HSNE (annoy, Flann, and HNSW (macOS only)). With annoy being the new default.</li>
-        <li>Provides selection of different distance metrics for the knn computation, depending on the selected library.</li>
-        <li>Now allows caching the HSNE hierarchy to disk to remove pre-computation time on re-computation HSNE with the same data and parameters.</li>
-    </ul>
-
-    <h2>Improvements</h2>
-    <ul>
-        <li>Several architecture changes to improve stability.</li>
-        <li>On startup, now opens the main application window larger, depending on the screen size.</li>
-        <li>Now hides the color-map legend in the A-tSNE and HSNE views when sample is selected.</li>
-        <li>Changes the labels of the color-map legend in the A-tSNE and HSNE views to indicate that the color-scale corresponds to min/max values of the data, not low/high expression values.</li>
-    </ul>
-
-    <h2>Bugfixes</h2>
-    <ul>
-        <li>Fixes an issue if fcs files contain infinite values.</li>
-        <li>Several minor bugfixes affecting the drawing of the A-tSNE and HSNE plots.</li>
-    </ul>
-
     <h1>Version 2.2.2</h1>
 
     <h2>Bugfixes</h2>
