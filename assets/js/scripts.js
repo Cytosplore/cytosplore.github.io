@@ -38,13 +38,13 @@ function init() {
 
     scroller();
 
-		var version = "2.2.1";
+		var version = "2.3.0";
 
     if(document.getElementById("download-bt") != null)
     {
   		if (navigator.appVersion.indexOf("Mac")!=-1){
   				document.getElementById("download-bt").src="assets/images/download-mac.png";
-  				document.getElementById("download-link").href="download/macos/Cytosplore."+version+".dmg";
+  				document.getElementById("download-link").href="download/macos/Cytosplore."+version+"a.dmg";
   		} else {
   				document.getElementById("download-bt").src="assets/images/download-win.png";
   				document.getElementById("download-link").href="download/win/"+version+"/install_cytosplore.exe";

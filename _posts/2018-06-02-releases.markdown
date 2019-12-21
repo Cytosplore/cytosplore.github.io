@@ -9,6 +9,27 @@ Here you can find the releases and change notes of Cytosplore. If you need an ol
 
 ---
 
+ **Version 2.3.0** &emsp; [<i class="fab fa-windows"></i> Windows 7 and higher](https://www.cytosplore.org/download/win/2.3.0/install_cytosplore.exe) &emsp; [<i class="fab fa-apple"></i> MacOS 10.12 (Sierra) and higher](https://www.cytosplore.org/download/macos/Cytosplore.2.3.0a.dmg)
+
+ New Features
+ * Up to 100x speedup (macOS: 10x) for a-tSNE and HSNE gradient descent by adding latest HDI, providing gradient descent using the GPU.
+ * Up to 10x speedup for a-tSNE and HSNE knn computation using the annoy aknn library.
+ * Now provides selection of three different approximated knn algorithms in A-tSNE and HSNE (annoy, Flann, and HNSW (macOS only)). With annoy being the new default.
+ * Provides selection of different distance metrics for the knn computation, depending on the selected library.
+ * Now allows caching the HSNE hierarchy to disk to remove pre-computation time on re-computation HSNE with the same data and parameters.
+
+ Improvements
+ * Several architecture changes to improve stability.
+ * On startup, now opens the main application window larger, depending on the screen size.
+ * Now hides the color-map legend in the A-tSNE and HSNE views when sample is selected.
+ * Changes the labels of the color-map legend in the A-tSNE and HSNE views to indicate that the color-scale corresponds to min/max values of the data, not low/high expression values.
+
+ Bugfixes
+ * Fixes an issue if fcs files contain infinite values.
+ * Several minor bugfixes affecting the drawing of the A-tSNE and HSNE plots.
+
+ ---
+
 **Version 2.2.1** &emsp; [<i class="fab fa-windows"></i> Windows 7 and higher](https://www.cytosplore.org/download/win/2.2.1/install_cytosplore.exe) &emsp; [<i class="fab fa-apple"></i> MacOS 10.12 (Sierra) and higher](https://www.cytosplore.org/download/macos/Cytosplore.2.2.1.dmg)
 
 Improvements
