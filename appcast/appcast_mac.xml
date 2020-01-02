@@ -5,13 +5,13 @@
         <description>Most recent updates to Cytosplore</description>
         <language>en</language>
         <item>
-          <title>Version 2.3.0</title>
+          <title>Version 2.3.0a</title>
           <sparkle:releaseNotesLink>
                https://www.cytosplore.org/appcast/release_notes.html
           </sparkle:releaseNotesLink>
           <pubDate>Fri, 20 Dec 2019 09:00:00 +0100</pubDate>
           <enclosure url="https://www.cytosplore.org/download/macos/Cytosplore.2.3.0a.dmg"
-               sparkle:version="2.3.0"
+               sparkle:version="2.3.0a"
                length="0"
                type="application/octet-stream" />
         </item>
