@@ -221,6 +221,10 @@ nav li > a:hover, nav li > a.active{
 	height: 30px;
 }
 
+#go-to-viewer-label {
+	display: none;
+  }
+
 .content-wrapper{
 	width: 100%;
 	margin-left: auto;
@@ -312,7 +316,7 @@ nav li > a:hover, nav li > a.active{
 	height: 50px;
 }
 
-@media only screen and (min-width: 640px){
+@media only screen and (min-width: 710px){
 
 	.paper-img{
 		padding-top:0px;
@@ -336,7 +340,7 @@ nav li > a:hover, nav li > a.active{
   }
 }
 
-@media only screen and (max-width : 1024px){
+@media only screen and (max-width : 1094px){
 
 	nav{
 		width: 90%;
@@ -348,7 +352,7 @@ nav li > a:hover, nav li > a.active{
 	}
 }
 
-@media only screen and (max-width : 800px){
+@media only screen and (max-width : 870px){
 
 	nav{
 		width: 96%;
@@ -362,7 +366,7 @@ nav li > a:hover, nav li > a.active{
 	}
 }
 
-@media only screen and (max-width : 640px){
+@media only screen and (max-width : 710px){
 
 	.nav-menu{
 		margin-top: 55px;
@@ -380,7 +384,7 @@ nav li > a:hover, nav li > a.active{
   }
 
   .nav-toggled {
-    height: 330px;
+    height: 383px;
     opacity: 0.95;
   	-o-transition: all 250ms ease-in-out;
   	-ms-transition: all 250ms ease-in-out;
@@ -392,9 +396,13 @@ nav li > a:hover, nav li > a.active{
   #nav-full {
     display: none;
   }
+
+  #go-to-viewer-label {
+	display: contents;
+  }
 }
 
-@media only screen and (max-width : 640px){
+@media only screen and (max-width : 710px){
 
 	.paper-img, .techno-images{
 
@@ -705,7 +713,7 @@ a.symbol {
   }
 }
 
-@media only screen and (min-width : 640px){
+@media only screen and (min-width : 710px){
 
   .left {
     width: 30%;
