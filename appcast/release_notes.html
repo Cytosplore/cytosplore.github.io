@@ -15,31 +15,60 @@
 
 <body>
 
-     <h1>Version 2.3.0</h1>
+    <h1>Version 2.3.1</h1>
 
-     <h2>New Features</h2>
-     <ul>
-         <li>Up to 100x speedup (macOS: 10x) for a-tSNE and HSNE gradient descent by adding latest HDI, providing gradient descent using the GPU.</li>
-         <li>Up to 10x speedup for a-tSNE and HSNE knn computation using the annoy aknn library.</li>
-         <li>Now provides selection of three different approximated knn algorithms in A-tSNE and HSNE (annoy, Flann, and HNSW (macOS only)). With annoy being the new default.</li>
-         <li>Provides selection of different distance metrics for the knn computation, depending on the selected library.</li>
-         <li>Now allows caching the HSNE hierarchy to disk to remove pre-computation time on re-computation HSNE with the same data and parameters.</li>
-     </ul>
+    This is a recommended update for everyone using 2.3.0 as it fixes a rare critical issue where some landmarks in an HSNE embedding would be missed in the clustering.
 
-     <h2>Improvements</h2>
-     <ul>
-         <li>Several architecture changes to improve stability.</li>
-         <li>On startup, now opens the main application window larger, depending on the screen size.</li>
-         <li>Now hides the color-map legend in the A-tSNE and HSNE views when sample is selected.</li>
-         <li>Changes the labels of the color-map legend in the A-tSNE and HSNE views to indicate that the color-scale corresponds to min/max values of the data, not low/high expression values.</li>
-     </ul>
+    <h2>New Features</h2>
+    <ul>
+        <li>In HSNE embeddings, when a sample is deselected for visualization, but landmarks taken from this sample remain in the embedding,
+            because they represent cells from other samples, those landmarks will now be assigned a neutral gray color.
+            This is also reflected in the color settings panel. 
+    </ul>
 
-     <h2>Bugfixes</h2>
-     <ul>
-         <li>Fixes an issue if fcs files contain infinite values.</li>
-         <li>Several minor bugfixes affecting the drawing of the A-tSNE and HSNE plots.</li>
-         <li>Fixes a bug in the scatterplot view that could prevent some points from being rendered in rare cases.</li>
-     </ul>
+    <h2>Improvements</h2>
+    <ul>
+        <li>Default folders are now also saved when loading files.</li>
+    </ul>
+
+    <h2>Bugfixes</h2>
+    <ul>
+        <li>Fixes a rare critical issue where the density plot and related clustering of an HSNE embedding would incorrectly not include some landmarks.</li>
+        <li>Fixes an issue where sample coloring would incorrectly be impacted by colormap settings.</li>
+        <li>Fixes an issue where the colormap selection would not show in the scatterplot density view sometimes.</li>
+    </ul>
+
+    <h1>Version 2.3.0</h1>
+
+    <h2>New Features</h2>
+    <ul>
+        <li>Up to 100x speedup (macOS: 10x) for a-tSNE and HSNE gradient descent by adding latest HDI, providing gradient descent using the GPU.</li>
+        <li>Up to 10x speedup for a-tSNE and HSNE knn computation using the annoy aknn library.</li>
+        <li>Now provides selection of three different approximated knn algorithms in A-tSNE and HSNE (annoy, Flann, and HNSW (macOS only)). With annoy being the new default.</li>
+        <li>Provides selection of different distance metrics for the knn computation, depending on the selected library.</li>
+        <li>Now allows caching the HSNE hierarchy to disk to remove pre-computation time on re-computation HSNE with the same data and parameters.</li>
+    </ul>
+
+    <h2>Improvements</h2>
+    <ul>
+        <li>Several architecture changes to improve stability.</li>
+        <li>On startup, now opens the main application window larger, depending on the screen size.</li>
+        <li>Now hides the color-map legend in the A-tSNE and HSNE views when sample is selected.</li>
+        <li>Changes the labels of the color-map legend in the A-tSNE and HSNE views to indicate that the color-scale corresponds to min/max values of the data, not low/high expression values.</li>
+    </ul>
+
+    <h2>Bugfixes</h2>
+    <ul>
+        <li>Fixes an issue if fcs files contain infinite values.</li>
+        <li>Several minor bugfixes affecting the drawing of the A-tSNE and HSNE plots.</li>
+    </ul>
+
+    <h1>Version 2.2.2</h1>
+
+    <h2>Bugfixes</h2>
+    <ul>
+        <li>Fixes a bug in the scatterplot view that could prevent some points from being rendered in rare cases.</li>
+    </ul>
 
     <h1>Version 2.2.1</h1>
 
