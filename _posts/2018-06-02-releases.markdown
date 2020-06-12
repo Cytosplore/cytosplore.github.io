@@ -9,7 +9,7 @@ Here you can find the releases and change notes of Cytosplore. If you need an ol
 
 ---
 
- **Version 2.3.1** &emsp; [<i class="fab fa-windows"></i> Windows 7 and higher](https://www.cytosplore.org/download/win/2.3.1/install_cytosplore.exe) &emsp; <i class="fab fa-apple"></i> MacOS 10.12 (Sierra) and higher, coming soon.
+ **Version 2.3.1** &emsp; [<i class="fab fa-windows"></i> Windows 7 and higher](https://www.cytosplore.org/download/win/2.3.1/install_cytosplore.exe) &emsp; <i class="fab fa-apple"></i> [MacOS 10.12 (Sierra) and higher](https://www.cytosplore.org/download/macos/Cytosplore.2.3.1.dmg).
  
  New Features
  * In HSNE embeddings, when a sample is deselected for visualization, but landmarks taken from this sample remain in the embedding, because they represent cells from other samples, those landmarks will now be assigned a neutral gray color. This is also reflected in the color settings panel.
